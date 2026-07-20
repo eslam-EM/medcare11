@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">
+    <img src="./images/logo.jpeg" alt="logo" class="img" > 
+      <span class="logo-text">MedCare<small>HOSPITAL</small></span>
+    </a>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#doctors">Doctors</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <a href="#" class="btn btn-outline">log In</a>
+      <a href="#contact" class="btn btn-primary">Contact</a>
+    </div>
+  </div>
+</header>
+<section class="login-page py-4">
+    <div class="container-fluid px-5">
+        <div class="row align-items-stretch min-vh-100">
+            <div class="col-lg-7 text-center mb-4 mb-lg-0 left">
+                <img src="./images/doctors.png"
+                    class="img-fluid doctor"
+                    alt="Doctor">
+            </div>
+            <div class="col-lg-5">
+                <div class="card border-0 shadow rounded-4 p-4 login-card">
+                    <h2 class="fw-bold text-center welcome-title">
+                        Welcome Back!
+                    </h2>
+                    <p class="text-center text-secondary mb-4">
+                        CARE YOU CAN BELIEVE IN
+                    </p>
+                    <form id="loginForm">
+                        <div class="mb-3">
+                            <label class="form-label">
+                                Username
+                            </label>
+                            <div class="input-group">
+                                <span class="input-group-text">
+                                    <i class="bi bi-person-fill"></i>
+                                </span>
+                                <input type="text" class="form-control" id="username" placeholder="Enter your Username">
+                            </div>
+                            <small id="userError"></small>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">
+                                Password
+                            </label>
+                            <div class="input-group">
+                                <span class="input-group-text">
+                                    <i class="bi bi-lock-fill"></i>
+                                </span>
+                                    <input type="password" class="form-control" id="password" placeholder="Enter your Password">
+                                <span class="input-group-text">
+                                    <i class="bi bi-eye" id="eye"></i>
+                                </span>
+                            </div>
+                            <small id="passError"></small>
+                        </div>
+                        <div class="text-end mb-4">
+                            <a href="#" class="text-decoration-none"> 
+                                Forgot Password? 
+                            </a> 
+                        </div>
+                        <button type="submit" class="btn btn-login text-white w-100 rounded-3 mb-3">
+                            <span>Login</span> 
+                        </button>
+                        <div class="text-center my-3">
+                            <span class="text-secondary">
+                                Or Continue With
+                            </span>
+                        </div>
+                        <div class="d-flex justify-content-center gap-3 mb-4">
+                            <button type="button" class="btn btn-light border rounded-circle social-btn">
+                                <i class="bi bi-google"></i>
+                            </button>
+                            <button type="button" class="btn btn-light border rounded-circle social-btn">
+                                <i class="bi bi-facebook"></i>
+                        </button>
+                        <button type="button" class="btn btn-light border rounded-circle social-btn">
+                                <i class="bi bi-apple"></i>
+                        </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="./js/login.js"></script>
+
+<div class="success-modal" id="successModal">
+    <div class="modal-content">
+        <div class="check-circle">
+            <i class="bi bi-check-lg"></i>
+        </div>
+        <h2>Login Successful!</h2>
+        <p>Welcome to MedCare</p>
+        <button onclick="closeModal()">OK</button>
+    </div>
+</div>
+</body>
+</html>
+        

@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "name": "Dr. Mike Smith",
+    "role": "Cardiologist",
+    "photo": "images/doctor (1).png",
+    "social": { "linkedin": "#", "facebook": "#", "instagram": "#" }
+  },
+  {
+    "id": 2,
+    "name": "Dr. John Smith",
+    "role": "General Surgeon",
+    "photo": "images/doctor (4).png",
+    "social": { "linkedin": "#", "facebook": "#", "instagram": "#" }
+  },
+  {
+    "id": 3,
+    "name": "Dr. Sarah Lane",
+    "role": "Neurologist",
+    "photo": "images/doctor (2).png",
+    "social": { "linkedin": "#", "facebook": "#", "instagram": "#" }
+  },
+  {
+    "id": 4,
+    "name": "Dr. sara Hassan",
+    "role": "Pediatrician",
+    "photo": "images/doctor (3).png",
+    "social": { "linkedin": "#", "facebook": "#", "instagram": "#" }
+  }
+]

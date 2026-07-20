@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MedCare Hospital | Your Health, Our Priority</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/login.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+      integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header class="site-header" id="siteHeader">
+      <div class="container header-inner">
+        <a href="index.html" class="logo">
+          <img src="./images/logo.jpeg" alt="logo" class="img" />
+          <span class="logo-text">MedCare<small>HOSPITAL</small></span>
+        </a>
+
+        <nav class="main-nav" id="mainNav">
+          <a href="#home" class="active">Home</a>
+          <a href="#about">About</a>
+          <a href="#doctors">Doctors</a>
+          <a href="./contact.html">Contact</a>
+        </nav>
+
+        <div class="header-actions">
+          <a href="./login.html" class="btn btn-outline">log In</a>
+          <a href="#contact" class="btn btn-primary">Contact</a>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero" id="home">
+      <div class="hero-bg-wrap">
+        <img
+          class="hero-bg"
+          src="images/hospital-hero.jpg"
+          alt="MedCare Hospital building"
+          onerror="
+            this.src = 'images/hero.svg';
+            this.classList.add('hero-bg--fallback');
+          "
+        />
+        <div class="hero-fade"></div>
+      </div>
+      <div class="container hero-inner">
+        <div class="hero-content reveal-left">
+          <span class="">Trusted Care Better Health</span>
+          <h1>
+            Your Health<br /><span class="text-accent">Our Priority</span>
+          </h1>
+          <p class="p-hero">
+            Compassionate specialists, modern diagnostics and 24/7 emergency
+            care — all under one roof, focused entirely on you.
+          </p>
+          <div class="hero-buttons">
+            <a href="#contact" class="btn btn-primary btn-lg"
+              >Book Appointment →</a
+            >
+            <a href="#services" class="btn btn-ghost btn-lg btn-our"
+              >Our Services →</a
+            >
+          </div>
+          <div class="hero-features">
+            <div class="hero-feature">
+              <span class="icon">
+              <img src="./images/hhh.jpeg" alt="">
+              </span>
+              <span>Renal </span>
+            </div>
+            <div class="hero-feature">
+              <span class="icon">
+                <img src="./images/hhh.jpeg" alt="">
+              </span>
+              <span>Cardiology</span>
+            </div>
+            <div class="hero-feature">
+              <span class="icon">
+              <img src="./images/hhh.jpeg" alt="">
+              </span>
+              <span>Neurology</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    
+    <section class="about" id="about">
+      <div class="container about-inner">
+        <div class="about-media reveal-left">
+          <img
+            src="images/about.jpg"
+            alt="MedCare medical team reviewing charts"
+          />
+        </div>
+        <div class="about-content reveal-right">
+          <span class="eyebrow">Welcome</span>
+          <h2>
+            Best Care for Your <span class="text-accent">Good Health</span>
+          </h2>
+          <ul class="check-grid">
+            <li>Trusted Medical Experts</li>
+            <li>Advanced Healthcare</li>
+            <li>Personalized Treatment</li>
+            <li>Modern Facilities</li>
+            <li>Holistic Care</li>
+            <li>Always Here for You</li>
+          </ul>
+          <p>
+            We are dedicated to delivering the highest standard of healthcare
+            excellence, through a distinguished team of consultants and
+            specialists equipped with the latest diagnostic and therapeutic
+            technologies.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="doctors" id="doctors">
+      <div class="container">
+        <div class="section-heading reveal-up">
+          <span class="eyebrow">Meet The</span>
+          <h2>Team Members</h2>
+        </div>
+        <div class="doctors-grid" id="doctorsGrid"></div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="container contact-inner">
+        <div class="contact-text reveal-left">
+          <span class="eyebrow Touch">Get In Touch</span>
+          <h2>Book Your Appointment</h2>
+          <p>
+            Fill in your details and our team will confirm your appointment
+            shortly.
+          </p>
+          <img src="./images/about.jpg" alt="">
+        </div>
+
+        <form class="contact-form reveal-right" id="contactForm" novalidate>
+          <div class="form-row">
+            <label class="field">
+              <span>Full name</span>
+              <div class="input-icon">
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Enter your name"
+                  required
+                />
+              </div>
+            </label>
+            <label class="field">
+              <span>Email address</span>
+              <div class="input-icon">
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Enter your email"
+                  required
+                />
+              </div>
+            </label>
+          </div>
+          <div class="form-row">
+            <label class="field">
+              <span>Phone number</span>
+              <div class="input-icon">
+                <input
+                  type="tel"
+                  name="phone"
+                  placeholder="Enter your phone"
+                  required
+                />
+              </div>
+            </label>
+            <label class="field">
+              <span>Department</span>
+              <div class="input-icon">
+                <select name="department" required>
+                  <option value="" disabled selected>Select department</option>
+                  <option>Cardiology</option>
+                  <option>Neurology</option>
+                  <option>General Surgery</option>
+                  <option>Pediatrics</option>
+                </select>
+              </div>
+            </label>
+          </div>
+          <label class="field">
+            <span>Message</span>
+            <textarea
+              name="message"
+              rows="4"
+              placeholder="Tell us briefly what you need"
+            ></textarea>
+          </label>
+          <button type="submit" class="btn btn-primary btn-lg btn-block">
+            Send Request →
+          </button>
+          <p
+            class="form-status"
+            id="formStatus"
+            role="status"
+            aria-live="polite"
+          ></p>
+        </form>
+      </div>
+    </section>
+
+
+
+
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-brand">
+          <a href="index.html" class="logo logo-footer">
+            <img src="./images/logo.jpeg" alt="logo" class="img" />
+            <span class="logo-text">MedCare<small>HOSPITAL</small></span>
+          </a>
+          <p>Trusted care for your well-being.</p>
+        </div>
+        <div class="footer-col footer-social">
+          <h4>Follow Us</h4>
+          <div class="social-icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <a href="#home">→ Home</a>
+          <a href="#about">→ About</a>
+          <a href="#doctors">→ Doctors</a>
+          <a href="#contact">→ Contact</a>
+        </div>
+
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <a href="index.html">→ FAQ</a>
+          <a href="index.html">→ Careers</a>
+          <a href="index.html">→ Privacy Policy</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        © <span id="year"></span> MedCare Hospital. All rights reserved.
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
