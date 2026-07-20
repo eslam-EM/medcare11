@@ -1,0 +1,71 @@
+/* ========== contact ============== */
+.ommmm{
+  margin-top: 100px;
+  margin-bottom:200px ;
+}
+.contact-f{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 100px;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+.Con{
+    color: #000000;
+    font-size: 2rem;
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+.Con::before{
+    content: "";
+    width: 80px;
+    height: 5px;
+    position: absolute;
+    bottom: -4px;
+    
+    background-color: #02DDCD;
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.card{
+    background-color: #02ddce67;
+    padding: 20px;
+    width: 200px;
+    border-radius: 0px 15px 0px 15px;
+    color: rgb(29, 29, 66);
+    
+    
+}
+.card2{
+    background-color: #002147;
+    padding: 20px;
+    width: 200px;
+    border-radius: 0px 15px 0px 15px;
+    color: rgb(251, 251, 251);
+    
+}
+.card:hover{
+  background-color: #002147;
+    padding: 20px;
+    border-radius: 0px 15px 0px 15px;
+    color: rgb(244, 244, 245);
+    
+}
+.c5:hover{
+    color: white;
+}
+i{
+    font-size: 1.8rem;
+}
+
+
+
+
