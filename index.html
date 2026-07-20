@@ -11,8 +11,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
       integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA=="
       crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+      referrerpolicy="no-referrer"/>
   </head>
   <body>
     <header class="site-header" id="siteHeader">
@@ -25,6 +24,7 @@
         <nav class="main-nav" id="mainNav">
           <a href="#home" class="active">Home</a>
           <a href="#about">About</a>
+          <a href="#services">Services</a>
           <a href="#doctors">Doctors</a>
           <a href="./contact.html">Contact</a>
         </nav>
@@ -33,6 +33,10 @@
           <a href="./login.html" class="btn btn-outline">log In</a>
           <a href="#contact" class="btn btn-primary">Contact</a>
         </div>
+
+        <button type="button" class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="mainNav">
+          <span></span><span></span><span></span>
+        </button>
       </div>
     </header>
 
@@ -91,8 +95,27 @@
       </div>
     </section>
 
+    <section class="stats">
+      <div class="container stats-grid">
+        <div class="stat reveal-up">
+          <div class="stat-number" data-count="15" data-suffix="+">0</div>
+          <div class="stat-label">Years of Experience</div>
+        </div>
+        <div class="stat reveal-up">
+          <div class="stat-number" data-count="50" data-suffix="+">0</div>
+          <div class="stat-label">Expert Doctors</div>
+        </div>
+        <div class="stat reveal-up">
+          <div class="stat-number" data-count="12000" data-suffix="+">0</div>
+          <div class="stat-label">Happy Patients</div>
+        </div>
+        <div class="stat reveal-up">
+          <div class="stat-number" data-count="24" data-suffix="/7">0</div>
+          <div class="stat-label">Emergency Service</div>
+        </div>
+      </div>
+    </section>
 
-    
     <section class="about" id="about">
       <div class="container about-inner">
         <div class="about-media reveal-left">
@@ -124,6 +147,57 @@
       </div>
     </section>
 
+    <section class="services" id="services">
+      <div class="container">
+        <div class="section-heading reveal-up">
+          <span class="eyebrow">What We Offer</span>
+          <h2>Comprehensive Care Under One Roof</h2>
+        </div>
+        <div class="services-grid">
+          <div class="service-card reveal-up">
+            <div class="service-icon"><i class="fa-solid fa-heart-pulse"></i></div>
+            <h3>Cardiology</h3>
+            <p>Full heart health screening, diagnostics and advanced cardiac treatment from our specialists.</p>
+          </div>
+          <div class="service-card reveal-up">
+            <div class="service-icon"><i class="fa-solid fa-brain"></i></div>
+            <h3>Neurology</h3>
+            <p>Expert care for brain, spine and nervous system disorders with modern imaging support.</p>
+          </div>
+          <div class="service-card reveal-up">
+            <div class="service-icon"><i class="fa-solid fa-bone"></i></div>
+            <h3>Orthopedics</h3>
+            <p>Joint, bone and muscle treatment along with sports injury recovery programs.</p>
+          </div>
+          <div class="service-card reveal-up">
+            <div class="service-icon"><i class="fa-solid fa-child-reaching"></i></div>
+            <h3>Pediatrics</h3>
+            <p>Complete child healthcare from infancy through adolescence, delivered with a gentle touch.</p>
+          </div>
+          <div class="service-card reveal-up">
+            <div class="service-icon"><i class="fa-solid fa-tooth"></i></div>
+            <h3>Dental Care</h3>
+            <p>Preventive and restorative dentistry for every member of the family.</p>
+          </div>
+          <div class="service-card reveal-up">
+            <div class="service-icon"><i class="fa-solid fa-truck-medical"></i></div>
+            <h3>Emergency Care</h3>
+            <p>24/7 emergency response and critical trauma care whenever you need us most.</p>
+          </div>
+          <div class="service-card reveal-up">
+            <div class="service-icon"><i class="fa-solid fa-flask"></i></div>
+            <h3>Laboratory</h3>
+            <p>Fast, accurate diagnostic testing and lab analysis with same-day results.</p>
+          </div>
+          <div class="service-card reveal-up">
+            <div class="service-icon"><i class="fa-solid fa-x-ray"></i></div>
+            <h3>Radiology</h3>
+            <p>Advanced imaging including X-ray, MRI and CT scans on state-of-the-art equipment.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="doctors" id="doctors">
       <div class="container">
         <div class="section-heading reveal-up">
@@ -131,6 +205,56 @@
           <h2>Team Members</h2>
         </div>
         <div class="doctors-grid" id="doctorsGrid"></div>
+      </div>
+    </section>
+
+    <section class="testimonials" id="testimonials">
+      <div class="container">
+        <div class="section-heading reveal-up">
+          <span class="eyebrow">Patient Stories</span>
+          <h2>What Our Patients Say</h2>
+        </div>
+        <div class="testimonials-grid">
+          <article class="testimonial-card reveal-up">
+            <div class="testimonial-rating">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testimonial-text">"The cardiology team took the time to explain every step of my treatment. I've never felt so cared for in a hospital."</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">SA</div>
+              <div>
+                <div class="testimonial-name">Sarah Ahmed</div>
+                <div class="testimonial-role">Cardiology Patient</div>
+              </div>
+            </div>
+          </article>
+          <article class="testimonial-card reveal-up">
+            <div class="testimonial-rating">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testimonial-text">"From the front desk to the surgeons, everyone was professional and kind. The recovery care afterward was outstanding."</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">MK</div>
+              <div>
+                <div class="testimonial-name">Mostafa Kamal</div>
+                <div class="testimonial-role">Orthopedics Patient</div>
+              </div>
+            </div>
+          </article>
+          <article class="testimonial-card reveal-up">
+            <div class="testimonial-rating">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <p class="testimonial-text">"Our daughter's pediatrician was patient and reassuring. Booking the appointment online was quick and easy too."</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">RH</div>
+              <div>
+                <div class="testimonial-name">Rana Hossam</div>
+                <div class="testimonial-role">Pediatrics Patient</div>
+              </div>
+            </div>
+          </article>
+        </div>
       </div>
     </section>
 
@@ -143,7 +267,30 @@
             Fill in your details and our team will confirm your appointment
             shortly.
           </p>
-          <img src="./images/about.jpg" alt="">
+          <ul class="contact-info">
+            <li>
+              <span class="icon"><i class="fa-solid fa-phone-volume"></i></span>
+              <div>
+                <strong>Call Us</strong>
+                <span>(237) 666-331-894</span>
+              </div>
+            </li>
+            <li>
+              <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+              <div>
+                <strong>Email Us</strong>
+                <span>appointments@medcare-hospital.com</span>
+              </div>
+            </li>
+            <li>
+              <span class="icon"><i class="fa-solid fa-location-dot"></i></span>
+              <div>
+                <strong>Visit Us</strong>
+                <span>0123 Some Place, Some Country</span>
+              </div>
+            </li>
+          </ul>
+          <img src="./images/about.jpg" alt="MedCare Hospital care team">
         </div>
 
         <form class="contact-form reveal-right" id="contactForm" novalidate>
@@ -242,21 +389,46 @@
           <h4>Quick Links</h4>
           <a href="#home">→ Home</a>
           <a href="#about">→ About</a>
+          <a href="#services">→ Services</a>
           <a href="#doctors">→ Doctors</a>
           <a href="#contact">→ Contact</a>
         </div>
 
         <div class="footer-col">
           <h4>Resources</h4>
-          <a href="index.html">→ FAQ</a>
-          <a href="index.html">→ Careers</a>
-          <a href="index.html">→ Privacy Policy</a>
+          <a href="#testimonials">→ Patient Stories</a>
+          <a href="contact.html">→ Contact Info</a>
+          <a href="login.html">→ Patient Login</a>
         </div>
       </div>
       <div class="footer-bottom">
         © <span id="year"></span> MedCare Hospital. All rights reserved.
       </div>
     </footer>
+
+    <div class="doctor-modal" id="doctorModal">
+      <div class="doctor-modal-backdrop" data-close-modal></div>
+      <div class="doctor-modal-content" role="dialog" aria-modal="true" aria-labelledby="doctorModalName">
+        <button type="button" class="doctor-modal-close" data-close-modal aria-label="Close">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <div class="doctor-modal-photo">
+          <img id="doctorModalPhoto" src="" alt="" />
+        </div>
+        <div class="doctor-modal-body">
+          <div class="role" id="doctorModalRole"></div>
+          <h3 id="doctorModalName"></h3>
+          <ul class="doctor-modal-meta">
+            <li><i class="fa-solid fa-briefcase-medical"></i><span id="doctorModalExperience"></span></li>
+            <li><i class="fa-solid fa-graduation-cap"></i><span id="doctorModalEducation"></span></li>
+            <li><i class="fa-solid fa-phone"></i><span id="doctorModalPhone"></span></li>
+            <li><i class="fa-solid fa-envelope"></i><span id="doctorModalEmail"></span></li>
+          </ul>
+          <p id="doctorModalBio"></p>
+          <div class="doctor-social" id="doctorModalSocial"></div>
+        </div>
+      </div>
+    </div>
 
     <script src="js/main.js"></script>
   </body>

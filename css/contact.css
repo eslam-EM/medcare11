@@ -49,20 +49,25 @@
     width: 200px;
     border-radius: 0px 15px 0px 15px;
     color: rgb(251, 251, 251);
-    
+}
+.card2 h3{
+    color: rgb(251, 251, 251);
 }
 .card:hover{
   background-color: #002147;
     padding: 20px;
     border-radius: 0px 15px 0px 15px;
     color: rgb(244, 244, 245);
-    
+
 }
-.c5:hover{
+.card:hover h3{
     color: white;
 }
 i{
     font-size: 1.8rem;
+}
+.cta-book{
+    margin-top: 10px;
 }
 
 

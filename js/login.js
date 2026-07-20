@@ -62,7 +62,7 @@ password.addEventListener("input", function(){
 });
 function closeModal(){
     document.getElementById("successModal").style.display = "none";
-    window.location.href = "../index.html";
+    window.location.href = "./account.html";
 }
 
 /*submit part*/
@@ -72,6 +72,21 @@ if(form){
         let usernameValid = checkUsername();
         let passwordValid = checkPassword();
         if(usernameValid && passwordValid){
+            const users = JSON.parse(localStorage.getItem("medcareUsers") || "{}");
+            const profile = users[username.value] || {
+                fullname: username.value,
+                email: "",
+                since: new Date().toISOString(),
+            };
+            users[username.value] = profile;
+            localStorage.setItem("medcareUsers", JSON.stringify(users));
+            localStorage.setItem("medcareCurrentUser", JSON.stringify({
+                username: username.value,
+                fullname: profile.fullname,
+                email: profile.email,
+                since: profile.since,
+            }));
+
             document.getElementById("successModal").style.display = "flex";
         }
     });

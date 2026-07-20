@@ -4,6 +4,11 @@
     "name": "Dr. Mike Smith",
     "role": "Cardiologist",
     "photo": "images/doctor (1).png",
+    "experience": "14 years",
+    "education": "MD, Cairo University School of Medicine",
+    "bio": "Dr. Mike Smith specializes in diagnosing and treating heart conditions, from routine screenings to complex cardiac procedures, with a focus on preventive cardiology.",
+    "phone": "(237) 666-331-894",
+    "email": "mike.smith@medcare-hospital.com",
     "social": { "linkedin": "#", "facebook": "#", "instagram": "#" }
   },
   {
@@ -11,6 +16,11 @@
     "name": "Dr. John Smith",
     "role": "General Surgeon",
     "photo": "images/doctor (4).png",
+    "experience": "18 years",
+    "education": "MD, Alexandria University School of Medicine",
+    "bio": "Dr. John Smith brings nearly two decades of experience in general and laparoscopic surgery, known for his calm approach and meticulous attention to patient recovery.",
+    "phone": "(237) 666-331-895",
+    "email": "john.smith@medcare-hospital.com",
     "social": { "linkedin": "#", "facebook": "#", "instagram": "#" }
   },
   {
@@ -18,13 +28,23 @@
     "name": "Dr. Sarah Lane",
     "role": "Neurologist",
     "photo": "images/doctor (2).png",
+    "experience": "11 years",
+    "education": "MD, Ain Shams University School of Medicine",
+    "bio": "Dr. Sarah Lane treats disorders of the brain, spine and nervous system, combining advanced diagnostics with a patient-first approach to long-term care.",
+    "phone": "(237) 666-331-896",
+    "email": "sarah.lane@medcare-hospital.com",
     "social": { "linkedin": "#", "facebook": "#", "instagram": "#" }
   },
   {
     "id": 4,
-    "name": "Dr. sara Hassan",
+    "name": "Dr. Sara Hassan",
     "role": "Pediatrician",
     "photo": "images/doctor (3).png",
+    "experience": "9 years",
+    "education": "MD, Cairo University School of Medicine",
+    "bio": "Dr. Sara Hassan cares for infants, children and teens, guiding families through everything from routine checkups to more specialized pediatric concerns.",
+    "phone": "(237) 666-331-897",
+    "email": "sara.hassan@medcare-hospital.com",
     "social": { "linkedin": "#", "facebook": "#", "instagram": "#" }
   }
 ]
