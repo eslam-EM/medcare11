@@ -68,8 +68,9 @@
                 <div class="card">
                     <i class="fa-regular fa-envelope"></i>
                   <h3 class="c5">Email</h3> 
-                  <p>fildineeesoe@gmil.com</p>
-                  <p>myebstudios@gmail.com</p>
+                  <p>Eslam@gmil.com</p>
+                  <p>Mariam@gmail.com</p>
+                  <p>omima@gmail.com</p>
                 </div>
 
                 <div class="card">
@@ -83,6 +84,83 @@
     </div>
 
 </section>
+
+<section class="contact">
+  <div class="container">
+    <div class="section-heading reveal-up">
+      <span class="eyebrow">Get In Touch</span>
+      <h2>Send Us a Message</h2>
+    </div>
+    <form class="contact-form contact-form-standalone reveal-up" id="contactForm" novalidate>
+      <div class="form-row">
+        <label class="field">
+          <span>Full name</span>
+          <div class="input-icon">
+            <input
+              type="text"
+              name="name"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+        </label>
+        <label class="field">
+          <span>Email address</span>
+          <div class="input-icon">
+            <input
+              type="email"
+              name="email"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+        </label>
+      </div>
+      <div class="form-row">
+        <label class="field">
+          <span>Phone number</span>
+          <div class="input-icon">
+            <input
+              type="tel"
+              name="phone"
+              placeholder="Enter your phone"
+              required
+            />
+          </div>
+        </label>
+        <label class="field">
+          <span>Department</span>
+          <div class="input-icon">
+            <select name="department" required>
+              <option value="" disabled selected>Select department</option>
+              <option>Cardiology</option>
+              <option>Neurology</option>
+              <option>General Surgery</option>
+              <option>Pediatrics</option>
+            </select>
+          </div>
+        </label>
+      </div>
+      <label class="field">
+        <span>Message</span>
+        <textarea
+          name="message"
+          rows="4"
+          placeholder="Tell us briefly what you need"
+        ></textarea>
+      </label>
+      <button type="submit" class="btn btn-primary btn-lg btn-block">
+        Send Request →
+      </button>
+      <p
+        class="form-status"
+        id="formStatus"
+        role="status"
+        aria-live="polite"
+      ></p>
+    </form>
+  </div>
+</section>
             <footer class="site-footer">
       <div class="container footer-inner">
         <div class="footer-brand">
@@ -95,9 +173,9 @@
         <div class="footer-col footer-social">
           <h4>Follow Us</h4>
           <div class="social-icons">
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-linkedin-in"></i>
-            <i class="fa-brands fa-instagram"></i>
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
           </div>
         </div>
         <div class="footer-col">
@@ -110,13 +188,13 @@
 
         <div class="footer-col">
           <h4>Resources</h4>
-          <a href="./index.html#testimonials">→ Patient Stories</a>
           <a href="./index.html#contact">→ Book Appointment</a>
           <a href="./login.html">→ Patient Login</a>
         </div>
       </div>
       <div class="footer-bottom">
-        © <span id="year"></span> MedCare Hospital. All rights reserved.
+        <span>© <span id="year"></span> MedCare Hospital. All rights reserved.</span>
+        <span class="footer-credit">Designed by Eslam, Omima, Mariam</span>
       </div>
     </footer>
 

@@ -1,20 +1,16 @@
 /* ========== contact ============== */
-.ommmm{
-  margin-top: 100px;
-  margin-bottom:200px ;
-}
-.contact-f{
+.contact-f{    
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 100px;
+    padding: 30px;
     gap: 20px;
     margin-bottom: 20px;
 }
 .Con{
     color: #000000;
-    font-size: 2rem;
+    font-size: 1rem;
     display: flex;
     position: relative;
     justify-content: center;
@@ -70,6 +66,33 @@ i{
     margin-top: 10px;
 }
 
+.contact-form-standalone {
+    max-width: 640px;
+    margin: 0 auto;
+}
 
+@media (max-width: 768px) {
+    .ommmm {
+        margin-top: 48px;
+        margin-bottom: 80px;
+    }
+    .contact-f {
+        padding: 40px 24px;
+    }
+}
+
+@media (max-width: 560px) {
+    .contact-f {
+        padding: 32px 16px;
+    }
+    .cards {
+        width: 100%;
+    }
+    .card,
+    .card2 {
+        width: 100%;
+        max-width: 320px;
+    }
+}
 
 
